@@ -1,0 +1,14 @@
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+    <mat-form-field appearance="fill">
+        <mat-label>Username</mat-label>
+        <input type="text" matInput formControlName="username" required>
+        <mat-hint align="end">Min 5 characters</mat-hint>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input type="password" matInput formControlName="password" required>
+        <mat-hint align="end">Min 8 characters</mat-hint>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button matTooltip="Click to register" [disabled]="form.invalid">Submit</button>
+</form>

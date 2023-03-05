@@ -1,0 +1,14 @@
+.checkbox-radio {
+    display: flex;
+    justify-content: space-between;
+}
+
+mat-radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+mat-radio-button {
+    margin: 15px 0;
+}

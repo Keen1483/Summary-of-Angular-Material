@@ -1,0 +1,10 @@
+<mat-toolbar color="primary" class="mat-elevation-z24" [style.margin-bottom]="'8px'">
+    <button mat-icon-button (click)="navOpen()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span><a class="brand" routerLink="">Angular Material</a></span>
+    <span class="example-spacer"></span>
+    <span *ngFor="let navLink of navLinks" class="link-spacer">
+      <a mat-button routerLink="{{navLink}}">{{navLink}}</a>
+    </span>
+</mat-toolbar>

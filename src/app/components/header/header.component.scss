@@ -1,0 +1,34 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.link-space {
+    flex: auto;
+}
+
+a.brand {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+// .mat-icon-button {
+//     display: none;
+// }
+
+// .mat-button {
+//     text-transform: capitalize;
+// }
+
+// @media (max-inline-size: 992px) {
+//     .mat-icon-button {
+//         display: block;
+//     }
+//     .mat-button {
+//         display: none;
+//     }
+// }
+
+.mat-button {
+    display: none;
+}

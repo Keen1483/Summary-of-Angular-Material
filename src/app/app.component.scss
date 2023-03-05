@@ -1,0 +1,23 @@
+.main-container {
+    inline-size: 100%;
+    block-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    inline-size: 70%;
+    block-size: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem;
+    border-inline-start: 0.5px solid #f2f0f0;
+    border-inline-end: 0.5px solid #f2f0f0;
+}
+
+mat-sidenav-container {
+    block-size: 93.5%;
+
+    mat-sidenav {
+        inline-size: 250px;
+    }
+}

@@ -1,0 +1,39 @@
+<div>
+    <mat-menu #menu="matMenu" xPosition="before" yPosition="above">
+        <button mat-menu-item [matMenuTriggerFor]="frontend">Fontend</button>
+        <button mat-menu-item [matMenuTriggerFor]="backend">Backend</button>
+    </mat-menu>
+    
+    <mat-menu #frontend="matMenu">
+        <button mat-menu-item>Angular</button>
+        <button mat-menu-item>React</button>
+        <button mat-menu-item>Vue</button>
+    </mat-menu>
+    <mat-menu #backend="matMenu">
+        <button mat-menu-item>Java</button>
+        <button mat-menu-item>Python</button>
+        <button mat-menu-item>PHP</button>
+    </mat-menu>
+    
+    <button mat-flat-button [matMenuTriggerFor]="menu" class="center">Menu</button>
+    <hr>
+
+    <mat-menu #lazyMenu="matMenu">
+        <ng-template matMenuContent let-name="name" let-hobby="hobby">
+            <button mat-menu-item>Settings</button>
+            <button mat-menu-item>Hobby is {{hobby}}</button>
+            <button mat-menu-item>Log out {{ name }}</button>
+        </ng-template>
+    </mat-menu>
+
+    <button
+        mat-raised-button
+        [matMenuTriggerData]="{ name: 'DevSkills', hobby: 'learning' }"
+        [matMenuTriggerFor]="lazyMenu">DevSkills
+    </button>
+    <button
+        mat-raised-button
+        [matMenuTriggerData]="{ name: 'ProSpringBoot', hobby: 'coding' }"
+        [matMenuTriggerFor]="lazyMenu">ProSpringBoot
+    </button>
+</div>

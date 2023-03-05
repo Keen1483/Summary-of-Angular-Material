@@ -1,0 +1,27 @@
+<div>
+    <span [matBadge]="notifications" [matBadgeHidden]="notifications === 0" matBadgeSize="small">Notifications</span>
+</div>
+<div>
+    <span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
+</div>
+<div>
+    <span matBadge="4" matBadgeSize="large">Text with large badge</span>
+</div>
+<div>
+    Button with a badge on the left
+    <button mat-raised-button color="primary" matBadge="8" matBadgePosition="above before" matBadgeColor="warn">
+        Action
+    </button>
+</div>
+<div>
+    Button toggle badge visibility
+    <button mat-raised-button matBadge="7" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">
+        Hide
+    </button>
+</div>
+<div>
+    Icon with a badge
+    <mat-icon matBadge="15" matBadgePosition="below before" matBadgeColor="accent">
+        home
+    </mat-icon>
+</div>
